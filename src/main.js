@@ -19,7 +19,7 @@ const MOUNT_NODE = document.getElementById('root')
 
 let render = () => {
   const routes = require('./routes/index').default(store)
-  console.log('main.js routes', routes);
+  // console.log('main.js routes', routes);
   // ADDED SET-TIMEOUT FUNCTION TO FIX FOUC ISSUE
   ReactDOM.render(
     <AppContainer store={store} routes={routes} />,
